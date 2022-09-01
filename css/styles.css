@@ -4,6 +4,7 @@
   --header-color: #212121;
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
+  --background-icon: #afb1b8;
 }
 
 body {
@@ -251,6 +252,38 @@ img {
   letter-spacing: 0.06em;
   color: var(--color);
   border: none;
+}
+
+.peculiarities {
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.peculiarities-antenna,
+.peculiarities-clock,
+.peculiarities-plane,
+.peculiarities-astronaut {
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+  padding: 0;
+  column-gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.link {
+  display: block;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
 }
 
 .section-about {
