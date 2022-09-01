@@ -4,6 +4,7 @@
   --header-color: #212121;
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -277,13 +278,24 @@ img {
   padding-right: 32px;
 }
 
-.link {
-  color: #afb1b8;
+.section-team .link {
   display: flex;
   align-items: center;
   width: 44px;
   height: 44px;
   justify-content: center;
+}
+
+.section-team .link:hover,
+.section-team .link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.link-icon {
+  fill: var(--icon-color);
 }
 
 .section-about {
