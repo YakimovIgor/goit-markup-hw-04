@@ -4,7 +4,6 @@
   --header-color: #212121;
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
-  --background-icon: #afb1b8;
 }
 
 body {
@@ -279,7 +278,8 @@ img {
 }
 
 .link {
-  display: block;
+  color: #afb1b8;
+  display: flex;
   align-items: center;
   width: 44px;
   height: 44px;
@@ -357,6 +357,14 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
+}
+
+.constant-clients {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .portfolio.nav {
