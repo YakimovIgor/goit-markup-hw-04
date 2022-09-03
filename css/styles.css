@@ -638,31 +638,27 @@ img {
 
 .footer-second-list {
   display: flex;
-  column-gap: 10px;
   padding: 0;
   margin: 0;
+  column-gap: 10px;
 }
 
 .second-footer-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-icon-white {
-  margin: 12px;
   fill: var(--color);
 }
 
 .footer-icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
 }
 
 .second-footer {
