@@ -664,3 +664,9 @@ img {
 .second-footer {
   margin-left: 70px;
 }
+
+.second-footer-links:hover,
+.second-footer-links:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
