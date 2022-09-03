@@ -53,6 +53,7 @@ img {
 }
 
 .header {
+  color: var(--primary-text-color);
   padding: 24px 0;
   border-bottom: 1px solid #ececec;
 }
@@ -196,6 +197,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.mailto-link {
+  fill: currentColor;
+}
+
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -278,24 +283,21 @@ img {
   padding-right: 32px;
 }
 
-.section-team .link {
+.section-team .link-picture {
   display: flex;
   align-items: center;
   width: 44px;
   height: 44px;
   justify-content: center;
+  fill: var(--icon-color);
 }
 
-.section-team .link:hover,
-.section-team .link:focus {
+.section-team .link-picture:hover,
+.section-team .link-picture:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
-  color: #ffffff;
+  fill: var(--color);
   cursor: pointer;
-}
-
-.link-icon {
-  fill: var(--icon-color);
 }
 
 .section-about {
@@ -369,6 +371,44 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
+}
+
+.company-items {
+  display: flex;
+  column-gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.company-picture {
+  display: flex;
+
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+}
+
+.company-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 92px;
+}
+
+.company-list:hover,
+.company-list:focus {
+  border-color: var(--accent-color);
+}
+
+.company-picture:hover,
+.company-picture:focus {
+  fill: var(--accent-color);
 }
 
 .constant-clients {
