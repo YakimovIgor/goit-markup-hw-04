@@ -88,6 +88,12 @@ img {
   align-items: center;
 }
 
+.contacts:hover,
+.contacts:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
 .hero-container {
   width: 696px;
   text-align: center;
@@ -190,14 +196,17 @@ img {
 }
 
 .contacts {
-  margin-left: 10px;
+  display: flex;
+  column-gap: 10px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.mailto-link {
+.mailto-link,
+.telephone-link {
   fill: currentColor;
 }
 
@@ -213,6 +222,9 @@ img {
     ),
     url("../images/header-picture.jpg");
   max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -264,6 +276,8 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
 }
 
 .peculiarities-antenna,
@@ -277,10 +291,8 @@ img {
   display: flex;
   padding: 0;
   column-gap: 10px;
-  padding-top: 16px;
   padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
 }
 
 .section-team .link-picture {
@@ -290,14 +302,13 @@ img {
   height: 44px;
   justify-content: center;
   fill: var(--icon-color);
+  border-radius: 50%;
 }
 
 .section-team .link-picture:hover,
 .section-team .link-picture:focus {
-  border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--color);
-  cursor: pointer;
 }
 
 .section-about {
@@ -366,7 +377,7 @@ img {
 
 .section-comand-text {
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -381,18 +392,15 @@ img {
 }
 
 .company-picture {
-  display: flex;
-
   width: 106px;
   height: 60px;
   fill: var(--icon-color);
 }
 
-.company-list {
+.company-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -401,14 +409,9 @@ img {
   height: 92px;
 }
 
-.company-list:hover,
-.company-list:focus {
+.company-link:focus,
+.company-link:hover {
   border-color: var(--accent-color);
-  cursor: pointer;
-}
-
-.company-picture:hover,
-.company-picture:focus {
   fill: var(--accent-color);
 }
 
@@ -566,6 +569,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--header-color);
 }
 
 .demonstration-text {
@@ -638,6 +642,7 @@ img {
   line-height: 1.14px;
   text-transform: uppercase;
   color: var(--color);
+  font-size: 14px;
 }
 
 .footer-container {
