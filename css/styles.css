@@ -644,6 +644,7 @@ img {
   text-transform: uppercase;
   color: var(--color);
   font-size: 14px;
+  line-height: 16px;
 }
 
 .footer-container {
