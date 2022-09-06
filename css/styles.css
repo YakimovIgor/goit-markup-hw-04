@@ -640,11 +640,9 @@ img {
   margin: 0;
   margin-bottom: 20px;
 
-  line-height: 1.14px;
   text-transform: uppercase;
   color: var(--color);
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.33;
 }
 
 .footer-container {
@@ -659,7 +657,7 @@ img {
   column-gap: 10px;
 }
 
-.second-footer-links {
+.social-link {
   display: flex;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
@@ -681,8 +679,7 @@ img {
   margin-left: 70px;
 }
 
-.second-footer-links:hover,
-.second-footer-links:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
-  cursor: pointer;
 }
